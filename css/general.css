@@ -12,7 +12,21 @@ html {
 }
 body {
     background: #111;
+    /* color: #232320; */
+    /* background: #191919; */
 }
 ::-webkit-scrollbar {
     display: none;
+}
+a {
+    color: #fff;
+}
+i {
+    font-size: 1.3rem;
+}
+.link {
+    display: inline-flex;
+}
+.link:nth-child(1) {
+    padding-right: 1rem;
 }

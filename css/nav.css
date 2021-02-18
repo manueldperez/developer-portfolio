@@ -1,0 +1,21 @@
+.nav-container {
+    position: fixed;
+    width: 100%;
+    background: #111;
+}
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 7.5vh;
+    align-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+.edge-links {
+    justify-self: right;
+}
+.nav-links span {
+    font-size: 1rem;
+    font-weight: 300;
+}
