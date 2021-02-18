@@ -33,13 +33,14 @@ span {
     padding-top: 2em;
     text-align: center;
 }
-@media screen and (max-width:910px) {
+@media screen and (max-width:1024px) {
     .about-container {
-        height: 100vh;
+        height: fit-content;
+        margin-bottom: 5em;
     }
-    /* .title {
+    .title {
         padding-top: unset;
-    } */
+    }
     .paragraph-container {
         max-width: 90%;
     }
@@ -51,10 +52,7 @@ span {
     }
 }
 @media screen and (max-width:525px) {
-    .about-container {
-        height: fit-content;
-    }
-    .text-container {
-        height: 100vh;
+    span {
+        font-size: 0.8rem;
     }
 }
