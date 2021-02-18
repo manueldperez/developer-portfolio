@@ -15,7 +15,7 @@
 .edge-links {
     justify-self: right;
 }
-span {
-    font-size: 1rem;
+.link {
+    font-size: 1.3rem;
     font-weight: 300;
 }

@@ -20,7 +20,7 @@ h1 {
     font-weight: 500;
     width: fit-content;
 }
-span {
+.paragraph-container span {
     color: #fff;
     font-weight: 500;
     font-size: 1.7em;
