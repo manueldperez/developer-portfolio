@@ -2,14 +2,15 @@
     position: fixed;
     width: 100%;
     background: #111;
+    z-index: 2;
 }
 .nav-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 7.5vh;
-    align-content: center;
     max-width: 90%;
     margin: 0 auto;
+    align-content: center;
     align-items: center;
 }
 .edge-links {
@@ -18,4 +19,9 @@
 .link {
     font-size: 1.3rem;
     font-weight: 300;
+}
+@media screen and (max-width:425px) {
+    .link {
+        font-size: 1rem;
+    }
 }

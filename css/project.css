@@ -1,6 +1,78 @@
-.project-container {
-    padding-top: 7.5vh;
+.projects {
+    padding-top: 10.5vh;
     margin-top: -7.5vh;
-    height: 100vh;
-    /* background: #191919; */
+    height: fit-content;
+    min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+.project-content {
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(325deg, #191919, #232323);
+}
+.project-content:hover {
+    transform: translateY(-1rem);
+    transition: all 0.4s ease-in-out;
+}
+.project-img {
+    text-align: center;
+}
+.image {
+    width: 100%;
+}
+.project-text, .project-text h1, .project-text p, .project-text h3, .project-text span {
+    padding-top: 5%;
+}
+.project-text h1 {
+    font-size: 3rem;
+}
+.project-text h3, .project-text p, .project-text span {
+    font-family: 'Libre Baskerville', serif;
+    color: #fff;
+    font-size: 1rem;
+}
+.links {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.links a:nth-child(1) {
+    padding-right: 0.5rem;
+}
+.links button {
+    text-transform: uppercase;
+    padding:0.3em 1.2em;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    font-size: 1rem;
+    font-weight:300;
+    transition: all 0.2s;
+}
+.links button:hover {
+    border-color: #111;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px) {
+    .projects {
+        max-width: 90%;
+    }
+    .project-container {
+        gap: 1rem;
+    }
+    .project-content:hover {
+        transform: unset;
+        transition: unset;
+    }
+}
+@media screen and (max-width:525px) {
+    /* .projects {
+        padding-top: 9.5vh;
+    } */
 }
