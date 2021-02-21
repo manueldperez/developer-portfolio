@@ -1,5 +1,5 @@
 .projects {
-    padding-top: 10.5vh;
+    padding-top: 12.5vh;
     margin-top: -7.5vh;
     height: fit-content;
     min-height: 100vh;
@@ -9,17 +9,17 @@
 }
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 3rem;
 }
 .project-content {
     padding: 1rem;
     border-radius: 10px;
     background: linear-gradient(325deg, #191919, #232323);
+    transition: all 0.4s ease-in-out;
 }
 .project-content:hover {
-    transform: translateY(-1rem);
-    transition: all 0.4s ease-in-out;
+    transform: perspective(150px) scaleZ(10) translateZ(1.5px);
 }
 .project-img {
     text-align: center;
@@ -57,8 +57,14 @@
     transition: all 0.2s;
 }
 .links button:hover {
-    border-color: #111;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
+}
+.links button:hover > span {
+    background: linear-gradient(112deg, #005eff 0,#2856a5 30%,#853f8a 51%,#ff0050 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease-in-out;
 }
 @media screen and (max-width:1024px) {
     .projects {
