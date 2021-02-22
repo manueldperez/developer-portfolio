@@ -20,7 +20,7 @@
     color: #fff;
     font-weight: 500;
     font-size: 1.7em;
-    line-height: 1.5em;
+    line-height: 2em;
     letter-spacing: 2px;
 }
 .paragraph-container {
@@ -30,6 +30,16 @@
     text-align: center;
 }
 @media screen and (max-width:1024px) {
+    .about-container {
+        min-height: unset;
+    }
+    .text-container { 
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding-top: 2vh;
+    }
     .title {
         padding-top: unset;
     }
@@ -49,5 +59,8 @@
     }
     h1 {
         font-size: 3rem;
+    }
+    .paragraph-container span {
+        font-size: 1rem;
     }
 }

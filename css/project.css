@@ -69,6 +69,7 @@
 @media screen and (max-width:1024px) {
     .projects {
         max-width: 90%;
+        padding-top: 10.5vh;
     }
     .project-container {
         gap: 1rem;
@@ -77,9 +78,14 @@
         transform: unset;
         transition: unset;
     }
+    .links button > span {
+        background: linear-gradient(112deg, #005eff 0,#2856a5 30%,#853f8a 51%,#ff0050 78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 @media screen and (max-width:525px) {
-    /* .projects {
-        padding-top: 9.5vh;
-    } */
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }

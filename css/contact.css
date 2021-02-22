@@ -76,6 +76,39 @@ textarea {
     -webkit-text-fill-color: transparent;
     transition: all 0.4s ease-in-out;
 }
+@media screen and (max-width:1024px) {
+    .contact-container {
+        position: unset;
+        margin-top: unset;
+        display: flex;
+        justify-content: center;
+        min-height: unset;
+        padding-top: 1rem;
+    }
+    .form {
+        position: relative;
+        left: unset;
+        top: unset;
+        transform: unset;
+        display: unset;
+        padding-bottom: 6rem;
+    }
+    .button-container button {
+        text-transform: uppercase;
+        padding:0.3em 1.2em;
+        border:0.16em solid rgba(255,255,255,0);
+        border-radius:2em;
+        font-size: 1rem;
+        font-weight:300;
+        background-color: #fff;
+        transition: all 0.2s;
+    }
+    .button-container button > span {
+        background: linear-gradient(112deg, #005eff 0,#2856a5 30%,#853f8a 51%,#ff0050 78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 @media screen and (max-width:525px) {
     .form {
         padding: 1rem;
