@@ -19,7 +19,7 @@
     transition: all 0.4s ease-in-out;
 }
 .project-content:hover {
-    transform: perspective(150px) scaleZ(10) translateZ(1.5px);
+    transform: scale3d(1.09, 1.09, 1.09);
 }
 .project-img {
     text-align: center;
@@ -74,9 +74,11 @@
     .project-container {
         gap: 1rem;
     }
+    .project-content {
+        transition: unset;
+    }
     .project-content:hover {
         transform: unset;
-        transition: unset;
     }
     .links button > span {
         background: linear-gradient(112deg, #005eff 0,#2856a5 30%,#853f8a 51%,#ff0050 78%);
