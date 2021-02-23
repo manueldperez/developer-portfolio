@@ -54,8 +54,3 @@ h3 {
 .link:nth-child(1) {
     padding-right: 1.5rem;
 }
-@media screen and (max-width:1024px) {
-    .unity-desktop {
-        display: none;
-    }
-}
