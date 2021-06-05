@@ -1,45 +1,46 @@
 .nav-container {
-    position: fixed;
-    width: 100%;
-    background: #111;
-    z-index: 2;
+  position: fixed;
+  width: 100%;
+  background: #111;
+  z-index: 2;
+  max-width: 1600px;
 }
 .nav-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7.5vh;
-    height: 7.5vh;
-    max-width: 90%;
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7.5vh;
+  height: 7.5vh;
+  max-width: 90%;
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
 }
 .link {
-    font-size: 1.3rem;
-    font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 .edge-links {
-    justify-self: right;
+  justify-self: right;
 }
 .resume-container {
-    display: inline-flex;
+  display: inline-flex;
 }
 .side-link {
-    display: inline-flex;
-    font-size: 1.3rem;
-    font-weight: 300;
-    padding-right: 1.5rem;
-    transition: all 0.4s ease-in-out;
+  display: inline-flex;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-right: 1.5rem;
+  transition: all 0.4s ease-in-out;
 }
 .side-link:nth-child(3) {
-    padding-right: unset;
+  padding-right: unset;
 }
-@media screen and (max-width:425px) {
-    .link {
-        font-size: 1rem;
-    }
-    .side-link {
-        font-size: 1rem;
-        padding-right: 1rem;
-    }
+@media screen and (max-width: 425px) {
+  .link {
+    font-size: 1rem;
+  }
+  .side-link {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
 }
